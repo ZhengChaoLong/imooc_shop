@@ -3,8 +3,11 @@ namespace  app\controllers;
 use yii\web\Controller;
 
 class IndexController extends Controller{
+
+ 	public $layout = 'layout1';
+ 	
 	public function actionIndex(){
-		$hello = 'hello world';
-		return $this->render('index',['hello'=>$hello]);
+		
+		return $this->render('index',array( ));
 	}
 }
